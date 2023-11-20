@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "types": ["express", "cors"],
+    "typeRoots": ["./", "./node_modules/@types"],
+  },
+  "include": ["**/*.ts", "**/*.d.ts", "express.d.ts", "middleware.ts"],
+  "exclude": ["node_modules","./coverage", "./dist", "__tests__", "jest.config.js"],
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true
+  },
+}

@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Local Server (Auto Reload)",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/backend/node_modules/.bin/ts-node",
+            "args": [
+                "${workspaceFolder}/backend/index.ts"
+            ],
+            "envFile": "${workspaceFolder}/.env",
+            "restart": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Current",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${file}",
+            "envFile": "${workspaceFolder}/.env"
+        },
+    ]
+}
